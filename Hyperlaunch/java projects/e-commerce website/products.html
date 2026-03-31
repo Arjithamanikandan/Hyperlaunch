@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Shine Cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">ShineCosmetics</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Products</h1>
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="category-filter">
+            <option value="all">Show All Categories</option>
+        </select>
+        <select id="sort">
+            <option value="default">Sort by</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
+    </div>
+    <section class="products" id="products"></section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Shine Cosmetics. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

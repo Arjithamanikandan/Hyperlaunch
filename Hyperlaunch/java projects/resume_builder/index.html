@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Resume Builder</h1>
+
+<div class="container">
+
+    <!-- FORM SECTION -->
+    <div class="form-box">
+        <h2>Enter Your Info</h2>
+
+        <label>Profile Photo</label>
+        <input type="file" accept="image/*" onchange="loadPhoto(event)">
+
+        <label>Full Name</label>
+        <input type="text" oninput="updateText('name', this.value)">
+
+        <label>Email</label>
+        <input type="email" oninput="updateText('email', this.value)">
+
+        <label>Phone</label>
+        <input type="text" oninput="updateText('phone', this.value)">
+
+        <label>Address</label>
+        <input type="text" oninput="updateText('address', this.value)">
+
+        <label>Objective</label>
+        <textarea oninput="updateText('objective', this.value)"></textarea>
+
+        <label>Career Goal</label>
+        <textarea oninput="updateText('career', this.value)"></textarea>
+
+        <label>Skills (comma separated)</label>
+        <input type="text" oninput="updateSkills(this.value)">
+    </div>
+
+    <!-- PREVIEW SECTION -->
+    <div class="preview-box">
+        <h2>Resume Preview</h2>
+
+        <div class="resume">
+            <div class="header">
+                <img id="photo" src="" alt="">
+                <div>
+                    <h1 id="name">Your Name</h1>
+                    <p id="email">email@example.com</p>
+                    <p id="phone">Phone</p>
+                    <p id="address">Address</p>
+                </div>
+            </div>
+
+            <h3>Objective</h3><hr>
+            <p id="objective">Your objective here</p>
+
+            <h3>Career Goal</h3><hr>
+            <p id="career">Your career goal</p>
+
+            <h3>Skills</h3><hr>
+            <ul id="skills">
+                <li>Skill</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

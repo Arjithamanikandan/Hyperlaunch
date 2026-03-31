@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Student Application Form</h2>
+
+    <!-- Photo Section -->
+    <div class="photo-row">
+        <div class="photo-circle">
+            <span>Photo</span>
+        </div>
+        <label class="choose-btn">
+            Choose Photo
+            <input type="file" hidden>
+        </label>
+    </div>
+
+    <form>
+        <label>ID :</label>
+        <input type="text">
+
+        <label>Name :</label>
+        <input type="text">
+
+        <label>Age :</label>
+        <input type="number">
+
+        <!-- Community -->
+        <label>Community :</label>
+        <div class="options">
+            <input type="radio" name="community"> BC
+            <input type="radio" name="community"> MBC
+            <input type="radio" name="community"> SC/ST
+        </div>
+
+        <!-- Gender -->
+        <label>Gender :</label>
+        <div class="options">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </div>
+
+        <label>Annual Salary :</label>
+        <select>
+            <option>Select</option>
+            <option>Below 1 Lakh</option>
+            <option>1 – 3 Lakhs</option>
+            <option>Above 3 Lakhs</option>
+        </select>
+
+        <label>Qualification :</label>
+        <select>
+            <option>Select</option>
+            <option>Diploma</option>
+            <option>UG</option>
+            <option>PG</option>
+        </select>
+
+        <label>Comment :</label>
+        <textarea rows="3"></textarea>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset" class="cancel">Cancel</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
+

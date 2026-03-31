@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    font-family: Arial, sans-serif;
+}
+
+/* Main Form */
+.form-container {
+    width: 430px;
+    background: #9e9e9b;
+    padding: 50px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #054a8f;
+}
+
+/* Photo Left Layout */
+.photo-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 15px 0;
+}
+
+.photo-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #e0f7fa;
+    border: 3px solid #111473;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #092847;
+}
+
+/* Choose Button */
+.choose-btn {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.choose-btn:hover {
+    opacity: 0.85;
+}
+
+/* Form Fields */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* Options */
+.options {
+    background: #f0f7ff;
+    padding: 10px;
+    width: 90%;
+    border-radius: 6px;
+}
+
+.options input {
+    margin-left: 10px;
+    accent-color: #185a9d;
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 9px 22px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    border: 1px solid #aaa;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    margin-left: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
