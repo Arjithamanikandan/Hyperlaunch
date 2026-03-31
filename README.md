@@ -4,8 +4,8 @@
 This repository contains all projects completed during the Hyperlaunch session.
 
 ## Projects Included
-- Project 1: (Python + short description)
-- Project 2: (Java + short description)
+- Project 1: (Python Projects)
+- Project 2: (Java projects)
 
 ## Technologies Used
 - ( Python, Java, HTML, CSS, JavaScript )
